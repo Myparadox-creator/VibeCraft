@@ -1,13 +1,17 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { Database } from "@/types/database";
+import { normalizeSupabaseUrl } from "./client";
 
 export async function createServerSupabaseClient() {
   const cookieStore = cookies();
+  const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-url.supabase.co";
+  const supabaseUrl = normalizeSupabaseUrl(rawUrl);
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-anon-key";
 
   return createServerClient<Database>(
-    process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-url.supabase.co",
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-anon-key",
+    supabaseUrl,
+    supabaseAnonKey,
     {
       cookies: {
         get(name: string) {

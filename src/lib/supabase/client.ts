@@ -1,6 +1,15 @@
 import { createBrowserClient } from "@supabase/ssr";
 import { Database } from "@/types/database";
 
+export function normalizeSupabaseUrl(rawUrl: string): string {
+  if (!rawUrl) return "";
+  return rawUrl
+    .trim()
+    .replace(/\/rest\/v1\/?$/i, "")
+    .replace(/\/auth\/v1\/?$/i, "")
+    .replace(/\/+$/, "");
+}
+
 export function getSupabaseCredentials() {
   let url = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
   let key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
@@ -14,7 +23,10 @@ export function getSupabaseCredentials() {
     }
   }
 
-  return { url, key };
+  return {
+    url: normalizeSupabaseUrl(url),
+    key: key.trim(),
+  };
 }
 
 export function createClient() {
@@ -37,7 +49,7 @@ export function isSupabaseConfigured(): boolean {
 
 export function setCustomSupabaseCredentials(url: string, key: string) {
   if (typeof window !== "undefined") {
-    localStorage.setItem("vibecraft_supabase_url", url.trim());
+    localStorage.setItem("vibecraft_supabase_url", normalizeSupabaseUrl(url));
     localStorage.setItem("vibecraft_supabase_key", key.trim());
   }
 }

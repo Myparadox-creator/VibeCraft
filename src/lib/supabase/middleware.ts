@@ -1,6 +1,6 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
-import { isSupabaseConfigured } from "./client";
+import { isSupabaseConfigured, normalizeSupabaseUrl } from "./client";
 
 export async function updateSession(request: NextRequest) {
   let response = NextResponse.next({
@@ -9,13 +9,15 @@ export async function updateSession(request: NextRequest) {
     },
   });
 
-  // If Supabase is not configured yet (e.g. initial demo mode), permit access
   if (!isSupabaseConfigured()) {
     return response;
   }
 
+  const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+  const supabaseUrl = normalizeSupabaseUrl(rawUrl);
+
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    supabaseUrl,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
@@ -64,7 +66,6 @@ export async function updateSession(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  // If unauthenticated and trying to access protected dashboard/event routes
   const isProtectedRoute =
     request.nextUrl.pathname.startsWith("/dashboard") ||
     request.nextUrl.pathname.startsWith("/events");
