@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow1" cx="20%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#c026d3" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#701a75" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow2" cx="80%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#b45309" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlowCenter" cx="50%" cy="10%" r="45%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#f5d0fe"/>
+      <stop offset="70%" stop-color="#e879f9"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="45%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c026d3"/>
+      <stop offset="50%" stop-color="#db2777"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <filter id="shadowGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#d946ef" flood-opacity="0.35"/>
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <!-- Dark Canvas Base -->
+  <rect width="1200" height="500" fill="#030712"/>
+
+  <!-- Ambient Glow Overlays -->
+  <rect width="1200" height="500" fill="url(#bgGlow1)"/>
+  <rect width="1200" height="500" fill="url(#bgGlow2)"/>
+  <rect width="1200" height="500" fill="url(#bgGlowCenter)"/>
+
+  <!-- Subtle Matrix Grid -->
+  <rect width="1200" height="500" fill="url(#grid)"/>
+
+  <!-- Outer Neon Border Frame -->
+  <rect x="16" y="16" width="1168" height="468" rx="24" fill="none" stroke="url(#cardBorder)" stroke-width="1.5"/>
+
+  <!-- Constellation / Star Dust -->
+  <circle cx="120" cy="90" r="1.5" fill="#fbcfe8" opacity="0.8"/>
+  <circle cx="280" cy="140" r="2" fill="#f0abfc" opacity="0.6"/>
+  <circle cx="940" cy="80" r="2.5" fill="#fde68a" opacity="0.8"/>
+  <circle cx="1060" cy="160" r="1.5" fill="#f472b6" opacity="0.7"/>
+  <circle cx="150" cy="400" r="2" fill="#c084fc" opacity="0.5"/>
+  <circle cx="1030" cy="410" r="2" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="600" cy="48" r="1.5" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Sparkle Icons -->
+  <g transform="translate(980, 110) scale(0.9)" opacity="0.9">
+    <path d="M0,20 Q20,20 20,0 Q20,20 40,20 Q20,20 20,40 Q20,20 0,20" fill="url(#logoGrad)"/>
+  </g>
+  <g transform="translate(160, 220) scale(0.65)" opacity="0.75">
+    <path d="M0,20 Q20,20 20,0 Q20,20 40,20 Q20,20 20,40 Q20,20 0,20" fill="#f472b6"/>
+  </g>
+
+  <!-- ================= LOGO & HERO SECTION ================= -->
+  <g transform="translate(0, 50)">
+    <!-- Main Center Badge -->
+    <g transform="translate(420, 15)">
+      <rect x="0" y="0" width="360" height="34" rx="17" fill="#1e112a" stroke="#d946ef" stroke-width="1" stroke-opacity="0.4"/>
+      <!-- Sparkle Icon in badge -->
+      <circle cx="22" cy="17" r="4" fill="#e879f9"/>
+      <text x="36" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="#f5d0fe">NEXT-GEN AI EVENT OPERATING SYSTEM</text>
+    </g>
+
+    <!-- Main Title Group -->
+    <g transform="translate(600, 125)" text-anchor="middle">
+      <!-- Glow behind title -->
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="68" font-weight="900" letter-spacing="-1.5" fill="#d946ef" opacity="0.25" filter="url(#shadowGlow)">VibeCraft</text>
+      <!-- Title -->
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="68" font-weight="900" letter-spacing="-1.5" fill="url(#textGrad)">VibeCraft</text>
+    </g>
+
+    <!-- Subtitle / Tagline -->
+    <text x="600" y="165" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" fill="#cbd5e1" letter-spacing="0.2">
+      Orchestrate Weddings, Birthdays &amp; Community Galas with Generative Intelligence
+    </text>
+
+    <!-- Tech Stack Pill Row -->
+    <g transform="translate(600, 205)" text-anchor="middle">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" letter-spacing="0.5">
+        ⚡ Next.js 14 App Router  ·  ✦ Google Gemini AI  ·  🛡️ Supabase (PostgreSQL + RLS)  ·  🔐 JWT Auth  ·  📊 Recharts Ledger
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= 3 FLOATING INTERACTIVE CARDS ================= -->
+
+  <!-- CARD 1: SMART BUDGET LEDGER -->
+  <g transform="translate(70, 310)" filter="url(#cardShadow)">
+    <rect width="320" height="135" rx="18" fill="url(#cardGrad)" stroke="url(#cardBorder)" stroke-width="1.2"/>
+    <!-- Icon & Header -->
+    <circle cx="34" cy="34" r="16" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.3"/>
+    <text x="34" y="39" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#34d399">💰</text>
+    <text x="60" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Smart Budget Optimizer</text>
+    <text x="60" y="47" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Interactive Category Allocation</text>
+
+    <!-- Mini chart bar inside card -->
+    <rect x="20" y="70" width="280" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="70" width="130" height="8" rx="4" fill="#d946ef"/>
+    <rect x="154" y="70" width="80" height="8" rx="4" fill="#f59e0b"/>
+    <rect x="238" y="70" width="45" height="8" rx="4" fill="#10b981"/>
+
+    <!-- Metrics -->
+    <text x="20" y="105" font-family="monospace" font-size="11" font-weight="700" fill="#34d399">$45,000 Cap</text>
+    <text x="120" y="105" font-family="monospace" font-size="11" fill="#94a3b8">·  $18.5k Paid</text>
+    <text x="210" y="105" font-family="monospace" font-size="11" font-weight="700" fill="#f472b6">62% Liquidity</text>
+
+    <text x="20" y="123" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b">Auto-detects hidden fees &amp; tips</text>
+  </g>
+
+  <!-- CARD 2: RUN-OF-SHOW TIMELINE (CENTERPIECE) -->
+  <g transform="translate(440, 295)" filter="url(#shadowGlow)">
+    <rect width="320" height="150" rx="20" fill="#150d2a" stroke="url(#logoGrad)" stroke-width="1.8"/>
+    <!-- Center badge -->
+    <rect x="20" y="16" width="105" height="22" rx="11" fill="#d946ef" fill-opacity="0.2"/>
+    <text x="72" y="31" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#f5d0fe">RUN-OF-SHOW</text>
+
+    <text x="20" y="60" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800" fill="#ffffff">Dynamic Timeline</text>
+    <text x="20" y="77" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#cbd5e1">12-Month Countdown → Day-Of</text>
+
+    <!-- Mini timeline items -->
+    <g transform="translate(20, 95)">
+      <circle cx="6" cy="6" r="4" fill="#10b981"/>
+      <line x1="6" y1="10" x2="6" y2="28" stroke="#334155" stroke-width="1.5"/>
+      <text x="20" y="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">12:00 PM Bridal Arrival &amp; HMUA</text>
+
+      <circle cx="6" cy="30" r="4" fill="#d946ef"/>
+      <text x="20" y="33" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#f5d0fe">05:00 PM Sunset Ocean Terrace</text>
+    </g>
+
+    <text x="220" y="132" font-family="monospace" font-size="10" font-weight="700" fill="#fde047">82 Days Left</text>
+  </g>
+
+  <!-- CARD 3: VENDOR CRM & AI IDEAS -->
+  <g transform="translate(810, 310)" filter="url(#cardShadow)">
+    <rect width="320" height="135" rx="18" fill="url(#cardGrad)" stroke="url(#cardBorder)" stroke-width="1.2"/>
+    <!-- Icon & Header -->
+    <circle cx="34" cy="34" r="16" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-opacity="0.3"/>
+    <text x="34" y="39" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#fbbf24">🤝</text>
+    <text x="60" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Vendor CRM &amp; RFPs</text>
+    <text x="60" y="47" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Contract Pipelines &amp; Checklists</text>
+
+    <!-- Status Chips -->
+    <g transform="translate(20, 68)">
+      <rect x="0" y="0" width="85" height="22" rx="7" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="0.8"/>
+      <text x="42" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#34d399">✓ 4 Booked</text>
+
+      <rect x="92" y="0" width="85" height="22" rx="7" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="0.8"/>
+      <text x="134" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fbbf24">2 Quoted</text>
+
+      <rect x="184" y="0" width="85" height="22" rx="7" fill="#d946ef" fill-opacity="0.15" stroke="#d946ef" stroke-width="0.8"/>
+      <text x="226" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#f0abfc">3 Prospects</text>
+    </g>
+
+    <text x="20" y="115" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#cbd5e1">💡 Audio Guestbook &amp; Gelato Cart</text>
+    <text x="20" y="128" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b">AI Concept Studio &amp; Color Palettes</text>
+  </g>
+</svg>
