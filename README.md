@@ -15,6 +15,12 @@
   <img src="https://img.shields.io/badge/License-MIT-f43f5e?style=for-the-badge" alt="License" />
 </p>
 
+<p align="center">
+  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMyparadox-creator%2FVibeCraft&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,GEMINI_API_KEY&envDescription=Supabase%20and%20Gemini%20API%20Credentials&project-name=vibecraft&repository-name=vibecraft">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+  </a>
+</p>
+
 ---
 
 ## 🌟 Executive Overview
