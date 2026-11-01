@@ -26,8 +26,8 @@
 ## 🎬 Video Walkthrough
 
 <p align="center">
-  <a href="./public/vibecraft_walkthrough.mp4">
-    <img src="https://drive.google.com/file/d/1ctDYAlLxlacaUrSGvcee7t9eEBAPiprv/view?usp=drive_link" width="100%" />
+  <a href="https://drive.google.com/file/d/1ctDYAlLxlacaUrSGvcee7t9eEBAPiprv/view?usp=drive_link" target="_blank">
+    <img src="./public/walkthrough_thumbnail.png" alt="Watch VibeCraft Video Walkthrough on Google Drive" width="100%" />
   </a>
 </p>
 
@@ -35,31 +35,11 @@
   <a href="https://vibecraft-supabase.vercel.app/">
     <img src="https://img.shields.io/badge/Live_Demo-vibecraft--supabase.vercel.app-f43f5e?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
   </a>
-  <a href="./public/vibecraft_walkthrough.mp4">
-    <img src="https://img.shields.io/badge/Download_Walkthrough-1080p_MP4_(7.3MB)-8b5cf6?style=for-the-badge&logo=youtube&logoColor=white" alt="Download Walkthrough" />
+  <a href="https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/Watch_on_Google_Drive-1080p_Video_(2:57)-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch on Google Drive" />
   </a>
 </p>
 
-> **Video Specifications**: 1920×1080 Full HD · 30 FPS · H.264 / AAC · Spoken Voice Narration · Duration: **02:57**  
-> Direct Video Link: [`./public/vibecraft_walkthrough.mp4`](./public/vibecraft_walkthrough.mp4)
-
-<details open>
-<summary><strong>⏱️ Video Chapters & Timestamps</strong></summary>
-<br />
-
-| Timestamp | Chapter | Core Module Demonstrated |
-| :---: | :--- | :--- |
-| **00:00 - 00:22** | **Title Sequence & Mission** | Enterprise event operating system introduction |
-| **00:22 - 00:44** | **Chapter 01: Showcase Landing** | Luxury dark aesthetic, trust badges, zero-setup demo access |
-| **00:44 - 01:03** | **Chapter 02: Event Command Center** | Multi-tenant portfolio cockpit, global KPI trackers ($85.5k portfolio) |
-| **01:03 - 01:25** | **Chapter 03: 3-Step AI Planning Wizard** | Parameter mapping, progressive synthesis, budget & milestone generation |
-| **01:25 - 01:45** | **Chapter 04: Smart Financial Ledger** | Interactive Recharts donut/bar charts, variance alerts, payment toggles |
-| **01:45 - 02:03** | **Chapter 05: Chronological Run-of-Show** | Dual-track roadmap (12-mo planning down to golden hour dance) |
-| **02:03 - 02:22** | **Chapter 06: Vendor CRM Pipeline** | Supplier status funnel, pre-built RFP checklists (overtime, sound ordinances) |
-| **02:22 - 02:43** | **Chapter 07: Concept Studio & Co-Pilot** | Curated color palettes with 1-click hex copy, persistent Gemini AI drawer |
-| **02:43 - 02:57** | **Technical Summary & Outro** | Next.js 14 App Router, Supabase PostgreSQL RLS, Google Gemini AI stack |
-
-</details>
 
 ---
 
