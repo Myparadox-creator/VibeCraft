@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts.bak
+
+# walkthrough generator scratch & raw assets
+/walkthrough_assets
+/vibecraft_walkthrough.mp4
+capture_highres_frames.js
+generate_audio.py
+prepare_audio.py
+render_full_walkthrough.py

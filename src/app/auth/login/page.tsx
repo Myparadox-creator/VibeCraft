@@ -131,7 +131,7 @@ export default function LoginPage() {
               </div>
 
               <Button type="submit" variant="glow" className="w-full gap-2 mt-2" disabled={loading}>
-                <span>{loading ? "Authenticating..." : "Sign In with JWT"}</span>
+                <span>{loading ? "Authenticating..." : "Sign In"}</span>
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </form>
