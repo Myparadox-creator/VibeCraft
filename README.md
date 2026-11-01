@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="./public/vibecraft_walkthrough.mp4">
-    <img src="./public/walkthrough_thumbnail.png" alt="VibeCraft 1080p Video Walkthrough" width="100%" />
+    <img src="https://drive.google.com/file/d/1ctDYAlLxlacaUrSGvcee7t9eEBAPiprv/view?usp=drive_link" width="100%" />
   </a>
 </p>
 
