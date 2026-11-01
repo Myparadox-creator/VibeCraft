@@ -35,7 +35,7 @@
   <a href="https://vibecraft-supabase.vercel.app/">
     <img src="https://img.shields.io/badge/Live_Demo-vibecraft--supabase.vercel.app-f43f5e?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
   </a>
-  <a href="https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing" target="_blank">
+  <a href="https://drive.google.com/file/d/1ctDYAlLxlacaUrSGvcee7t9eEBAPiprv/view?usp=drive_link" target="_blank">
     <img src="https://img.shields.io/badge/Watch_on_Google_Drive-1080p_Video_(2:57)-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch on Google Drive" />
   </a>
 </p>
