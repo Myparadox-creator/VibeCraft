@@ -5,6 +5,7 @@ export function normalizeSupabaseUrl(rawUrl: string): string {
   if (!rawUrl) return "";
   return rawUrl
     .trim()
+    .replace(/\/+$/, "")
     .replace(/\/rest\/v1\/?$/i, "")
     .replace(/\/auth\/v1\/?$/i, "")
     .replace(/\/+$/, "");

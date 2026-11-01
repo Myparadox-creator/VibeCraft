@@ -138,6 +138,8 @@ vibecraft/
 ## 8. Common Developer Workflows
 
 * **Start Local Dev**: `npm run dev` (Runs at `http://localhost:3000`)
+* **Run Unit Tests**: `npm test`
+* **Run Test Coverage**: `npm run test:coverage`
 * **Local Production Build**: `npm run build`
 * **Run TypeScript Check**: `npx tsc --noEmit`
 * **Trigger Production Deploy**: `git push origin main` (Vercel automatically triggers a build upon push)
