@@ -3,7 +3,14 @@
 </p>
 
 <p align="center">
-  <strong>✦ The intelligent full-stack operating system for orchestrating unforgettable weddings, milestone birthdays, and community gatherings.</strong>
+  <strong>🏆 Built for the Virtual Prompt Wars Hackathon by {Build with AI} (Google for Developers) & Hack2skill</strong><br/>
+  <em>✦ The intelligent full-stack operating system for orchestrating unforgettable weddings, milestone birthdays, and community gatherings.</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Hackathon-Virtual_Prompt_Wars-7C3AED?style=for-the-badge&logo=google&logoColor=white" alt="Virtual Prompt Wars" />
+  <img src="https://img.shields.io/badge/Build_with_AI-Google_for_Developers-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Build with AI" />
+  <img src="https://img.shields.io/badge/Organized_by-Hack2skill-FF6F00?style=for-the-badge" alt="Hack2skill" />
 </p>
 
 <p align="center">
@@ -44,6 +51,8 @@
 ---
 
 ## 🌟 Executive Overview
+
+> 🏆 **Virtual Prompt Wars Hackathon Submission**: VibeCraft was built specifically for the **Virtual Prompt Wars** hackathon, organized by **Google for Developers** through the **{Build with AI}** initiative in partnership with **Hack2skill**.
 
 **VibeCraft** is an enterprise-grade, AI-orchestrated event planning platform designed to replace fragmented spreadsheets, disorganized email chains, and stressful day-of coordination. 
 
@@ -183,7 +192,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-### 5. Production Build Verification
+### 5. Run Automated Test Suite
+```bash
+# Run unit & integration test suites
+npm test
+
+# Run test coverage report
+npm run test:coverage
+```
+
+### 6. Production Build Verification
 ```bash
 npm run build
 ```
